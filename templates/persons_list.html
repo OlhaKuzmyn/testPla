@@ -1,0 +1,21 @@
+{% extends 'base_layout.html' %}
+
+{% block title %}
+  Persons List
+{% endblock %}
+
+{% block body %}
+    <h1>Persons List</h1>
+
+    <div>
+        {% for person in persons %}
+            <div>
+                <h3><a href="{% url 'persons:detail' person_id=person.id %}">{{ person.fullname }}</a> </h3>
+                <p>{{ person.job }}</p>
+                <p>{{ person.date }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # Apps
     'apps.login',
+    'apps.person'
 ]
 
 MIDDLEWARE = [

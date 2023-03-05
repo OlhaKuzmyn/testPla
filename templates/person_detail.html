@@ -1,0 +1,25 @@
+{% extends 'base_layout.html' %}
+
+{% block title %}
+  {{ person.fullname }}
+{% endblock %}
+
+{% block body %}
+    <h1>{{ person.fullname }}</h1>
+
+    <div>
+        <p>{{ person.job }}</p>
+        <p>{{ person.email }}</p>
+        <p>{{ person.domain }}</p>
+        <p>{{ person.phone }}</p>
+        <p>{{ person.company }}</p>
+        <p>{{ person.description }}</p>
+        <p>{{ person.salary }}</p>
+        <p>{{ person.address }}</p>
+        <p>Added: {{ person.date }}</p>
+        <p>Added By: {{ person.user }}</p>
+    </div>
+
+
+
+{% endblock %}

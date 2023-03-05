@@ -16,6 +16,7 @@ def signup_view(request):
         form = UserCreationForm()
     return render(request, 'sign_up.html', {'form': form})
 
+
 def login_view(request):
     if request.method == 'POST':
         form = AuthenticationForm(data=request.POST)
@@ -30,6 +31,7 @@ def login_view(request):
     else:
         form = AuthenticationForm()
     return render(request, 'login.html', {'form': form})
+
 
 def logout_view(request):
     if request.method == 'POST':
